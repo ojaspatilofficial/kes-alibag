@@ -29,7 +29,11 @@ const ON_VERCEL = Boolean(process.env.VERCEL);
 const USE_BLOB = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 
 if (!process.env.JWT_SECRET) {
-  console.warn('JWT_SECRET is not set in .env — admin logins will reset whenever the server restarts.');
+  console.warn(
+    ON_VERCEL
+      ? 'JWT_SECRET is not set in the Vercel project — admin login is disabled until it is added.'
+      : 'JWT_SECRET is not set in .env — admin logins will reset whenever the server restarts.'
+  );
 }
 if (!ON_VERCEL) fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 
@@ -80,11 +84,17 @@ app.use(
 
 let connecting;
 export function connectDb() {
+  if (ON_VERCEL && !process.env.MONGODB_URI) {
+    return Promise.reject(new Error('MONGODB_URI is not set in the Vercel project’s Environment Variables.'));
+  }
   connecting ??= mongoose
-    .connect(MONGODB_URI, { serverSelectionTimeoutMS: 10000 })
+    // A small pool per serverless instance keeps Atlas (free tier: 500 connections) comfortable.
+    .connect(MONGODB_URI, { serverSelectionTimeoutMS: 10000, maxPoolSize: ON_VERCEL ? 5 : 20 })
     .then(async () => {
       console.log('Connected to MongoDB.');
-      await seedDatabase();
+      // On Vercel every cold start runs this: when the database is already set up, skip the full check.
+      const ready = ON_VERCEL && (await Settings.exists({})) && (await Admin.exists({}));
+      if (!ready) await seedDatabase();
     })
     .catch((err) => {
       connecting = undefined;
@@ -153,6 +163,10 @@ app.post(
   '/api/auth/login',
   loginLimiter,
   handle(async (req, res) => {
+    // Serverless instances must share one signing secret, or logins break between requests.
+    if (ON_VERCEL && !process.env.JWT_SECRET) {
+      return res.status(500).json({ error: 'Admin login is not set up: add JWT_SECRET in the Vercel project’s Environment Variables and redeploy.' });
+    }
     const username = String(req.body?.username ?? '').trim().slice(0, 60);
     const password = String(req.body?.password ?? '').slice(0, 200);
     if (!username || !password) return res.status(400).json({ error: 'Please enter your username and password.' });

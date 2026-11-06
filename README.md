@@ -61,19 +61,12 @@ uploaded files use their full URL.
 
 ## Deploying to Vercel
 
-`api/index.js` wraps the Express app as a serverless function; `vercel.json` routes `/api/*` and `/uploads/*` to it and
-sets the security headers (CSP, `nosniff`, `Referrer-Policy`, `frame-ancestors 'none'`, `Permissions-Policy`, HSTS).
+Full step-by-step guide: **[`DEPLOY_VERCEL.md`](DEPLOY_VERCEL.md)** (Atlas network access, importing the repo,
+environment variables, Blob storage for uploads, checks and troubleshooting).
 
-1. **Database:** create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), add a database user and
-   allow `0.0.0.0/0` under *Network Access* (Vercel has no fixed IP). Copy the `mongodb+srv://…` string and add the
-   database name, e.g. `…/kes_alibag?retryWrites=true&w=majority`.
-2. **Import the repository** at [vercel.com/new](https://vercel.com/new). Settings come from `vercel.json`.
-   Node.js version: 22.x (Project → Settings → General).
-3. **Environment variables** (Project → Settings → Environment Variables):
-   `MONGODB_URI`, `JWT_SECRET`, `ADMIN_USERNAME`, `ADMIN_PASSWORD` and `SITE_URL`.
-4. **File uploads:** Project → Storage → create a **Blob** store and connect it (adds `BLOB_READ_WRITE_TOKEN`).
-   On Vercel each upload must be **under 4 MB** — the dashboard says so.
-5. **Redeploy** so the variables take effect. The first request seeds the empty database and creates the admin account.
+In short: `api/index.js` wraps the Express app as one serverless function; `vercel.json` routes `/api/*` and
+`/uploads/*` to it and sets the security headers. Set `MONGODB_URI`, `JWT_SECRET`, `ADMIN_USERNAME`,
+`ADMIN_PASSWORD` and `SITE_URL`, and connect a Vercel Blob store for uploads (4 MB per file).
 
 ## Admin dashboard
 
