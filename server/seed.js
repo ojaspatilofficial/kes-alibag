@@ -1,4 +1,4 @@
-// Fills an empty database with the Society's starting content (from src/data/ — CLAUDE_PROMPT.md §4).
+// Fills an empty database with the Society's starting content (from src/data/).
 // Runs automatically when the server starts. `npm run seed:reset` wipes and reloads everything.
 import bcrypt from 'bcryptjs';
 import { board, leaders, timeline, documents, notices, gallery, institutions, defaultSettings } from './startingContent.js';

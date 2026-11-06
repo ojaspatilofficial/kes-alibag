@@ -1,4 +1,4 @@
-// Society facts from CLAUDE_PROMPT.md §4. Do not add facts that are not in that file.
+// Verified Society facts. Do not add anything that has not been confirmed by K.E.S.
 // Also read by the Mongo seed (server/startingContent.js).
 import type { BoardMember, DocumentItem, GalleryItem, Leader, NoticeItem, SiteSettings, TimelineItem } from './types.ts';
 

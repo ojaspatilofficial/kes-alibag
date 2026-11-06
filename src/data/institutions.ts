@@ -1,4 +1,4 @@
-// Every K.E.S. institution listed in CLAUDE_PROMPT.md §4.5 (68 in total).
+// Every K.E.S. institution currently listed (68 in total).
 // Names are kept exactly as given — some spellings are awaiting verification (see CONTENT_TODO.md).
 // This file is also read by the Mongo seed (server/startingContent.js) and the sitemap script.
 import type { Institution, InstitutionCategory, District } from './types.ts';

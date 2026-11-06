@@ -1,6 +1,6 @@
 # CONTENT_TODO — facts to collect before launch
 
-The website shows **only** facts from `CLAUDE_PROMPT.md` §4. Anything missing is hidden on the public site and
+The website shows **only** verified facts about the Society. Anything missing is hidden on the public site and
 appears as an empty field in the admin dashboard (`/admin`). This list is what K.E.S. staff need to supply or check.
 
 > ⚠ **Marathi strings must be reviewed by K.E.S. staff before launch.**
