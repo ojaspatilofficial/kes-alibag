@@ -1,0 +1,175 @@
+{
+  "/images/about/datta-patil-sankul-admin-office": {
+    "widths": [
+      480,
+      800
+    ],
+    "width": 800,
+    "height": 800,
+    "avif": true
+  },
+  "/images/board/adv-hemant-gangal-director": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/adv-pallavi-patil-secretary": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/adv-siddharth-patil-president": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/anita-patil-addl-ceo": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/dilip-parte-director": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/rajiv-mali-vice-president": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/sanjay-datta-patil-director": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/subhash-patil-mla-director": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/board/vinayak-khopkar-ceo": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/leaders/adv-siddharth-patil": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 400
+  },
+  "/images/leaders/loknete-adv-datta-patil-dada": {
+    "widths": [
+      400,
+      700
+    ],
+    "width": 700,
+    "height": 800
+  },
+  "/images/leaders/prabhakar-patil-bhau": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 400
+  },
+  "/images/leaders/sanjay-datta-patil": {
+    "widths": [
+      400
+    ],
+    "width": 400,
+    "height": 400
+  },
+  "/images/history/english-medium-school-bhoomi-pujan": {
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/images/history/foundation-plaque-dignitaries": {
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/images/history/leaders-address-gathering": {
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/images/history/prathamik-shala-bhoomi-pujan": {
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/images/history/ribbon-cutting-inauguration": {
+    "widths": [
+      480,
+      960,
+      1600
+    ],
+    "width": 1920,
+    "height": 1080
+  },
+  "/images/brand/kes-emblem-on-white": {
+    "widths": [
+      96,
+      192,
+      400
+    ],
+    "width": 400,
+    "height": 500
+  },
+  "/images/brand/kes-emblem": {
+    "widths": [
+      96,
+      192,
+      474
+    ],
+    "width": 474,
+    "height": 482
+  },
+  "/images/brand/kes-torch-flag": {
+    "widths": [
+      96,
+      192,
+      400
+    ],
+    "width": 400,
+    "height": 500
+  }
+}
