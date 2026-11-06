@@ -26,7 +26,7 @@ export async function seedDatabase({ reset = false } = {}) {
 
   if (reset) await Settings.deleteMany({});
   if ((await Settings.countDocuments()) === 0) {
-    await Settings.create({ ...defaultSettings, jrh_site_url: process.env.VITE_JRH_SITE_URL || '' });
+    await Settings.create(defaultSettings);
     console.log('  • Added site settings');
   }
 

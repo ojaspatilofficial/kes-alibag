@@ -72,23 +72,10 @@ export const SettingsContext = createContext<SiteSettings>(defaultSettings);
 
 export const useSettings = () => useContext(SettingsContext);
 
-/** The Smt. J.R.H. Kanyashala site URL — from Admin → Settings, or VITE_JRH_SITE_URL at build time. */
-export function useJrhUrl() {
-  const settings = useSettings();
-  return (settings.jrh_site_url || import.meta.env.VITE_JRH_SITE_URL || '').trim();
-}
-
-/** Institutions with the J.R.H. website applied. */
+/** All institutions in display order. Each one's website is set in Admin → Institutions. */
 export function useInstitutions(): Institution[] {
   const list = useContent('institutions');
-  const jrh = useJrhUrl();
-  return useMemo(
-    () =>
-      [...list]
-        .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-        .map((i) => (i.isJrh && !i.website && jrh ? { ...i, website: jrh } : i)),
-    [list, jrh]
-  );
+  return useMemo(() => [...list].sort((a, b) => (a.order ?? 0) - (b.order ?? 0)), [list]);
 }
 
 /** Documents that actually have a file (public pages never show empty slots). */

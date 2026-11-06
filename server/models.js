@@ -53,7 +53,6 @@ const InstitutionSchema = new Schema(
     email: text(120, { match: [/^$|^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Please enter a valid email address.'] }),
     principal: text(150),
     established: { type: Number, default: null, min: 1800, max: 2100 },
-    isJrh: { type: Boolean, default: false },
     order: { type: Number, default: 1000 },
   },
   jsonOptions

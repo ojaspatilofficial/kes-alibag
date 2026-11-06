@@ -70,7 +70,7 @@ const groups: { category: InstitutionCategory; medium: 'English' | 'Marathi' | n
       ['Mehendale High School & Junior College', 'Roha'],
       ['Vithoba Khandappa High School & Junior College', 'Panvel'],
       ['Genral Arunkumar Vaidy Vidyalay & Industrial Junior College', 'Alibag'],
-      ['Jankibai Raghunath Haldawnekar Kanya Shala & Junior College', 'Alibag', { isJrh: true }],
+      ['Jankibai Raghunath Haldawnekar Kanya Shala & Junior College', 'Alibag'],
       ['Sardar Raobahaddur Tendulkar Vidyalay & Vishwnath Mahadev Pilankar Junior College', 'Revdanda'],
       ['Narayan Nagu Patil High School & Junior College', 'Poynad'],
       ['Gangadhar Dattatrey Ambekar High School & Chandrakant Ganpat Mehata Junior College', 'Birwadi'],
@@ -150,7 +150,6 @@ export const institutions: Institution[] = groups.flatMap(({ category, medium, r
       email: '',
       principal: '',
       established: null,
-      isJrh: false,
       order,
       ...extra,
     };

@@ -24,8 +24,8 @@ appears as an empty field in the admin dashboard (`/admin`). This list is what K
 - [ ] **College of Education** — mentioned by an older source, not named anywhere. Add it if it exists.
 - [ ] The list has 68 institutions; the official claim is “100+”. Add the missing ones (Admin → Institutions).
 - [ ] For every institution: **logo, principal, phone, email, year established**, and website if one exists.
-- [ ] **Smt. J.R.H. Kanyashala** deployed website URL → `VITE_JRH_SITE_URL` in `.env` / Vercel, or Admin → Settings →
-      *Smt. J.R.H. Kanyashala website*. Its card then shows “Visit website” + a “New website” badge.
+- [ ] Website addresses of institutions that have their own site (e.g. Smt. J.R.H. Kanyashala) →
+      Admin → Institutions → open the institution → *Website*. Its card then shows “Visit website”.
 
 ### Names to verify (kept exactly as given until confirmed)
 - [ ] “**Genral** Arunkumar **Vaidy** **Vidyalay** & Industrial Junior College, Alibag” (General? Vaidya? Vidyalaya?)

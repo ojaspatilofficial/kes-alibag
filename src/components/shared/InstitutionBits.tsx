@@ -53,7 +53,6 @@ export const InstitutionCard: React.FC<{ institution: Institution; showCategory?
         {showCategory && <CategoryBadge category={i.category} />}
         {i.hasJuniorCollege && <Badge tone="gold">Jr. College</Badge>}
         {i.medium && <Badge>{i.medium} medium</Badge>}
-        {i.isJrh && i.website && <Badge tone="green">New website</Badge>}
       </div>
       <h3 className="font-serif font-bold text-primary-900 leading-snug text-[1.02rem]">
         <Link to={profilePath(i)} className="hover:text-primary-700 after:absolute after:inset-0 after:content-['']">

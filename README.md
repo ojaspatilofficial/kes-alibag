@@ -70,7 +70,7 @@ sets the security headers (CSP, `nosniff`, `Referrer-Policy`, `frame-ancestors '
 2. **Import the repository** at [vercel.com/new](https://vercel.com/new). Settings come from `vercel.json`.
    Node.js version: 22.x (Project → Settings → General).
 3. **Environment variables** (Project → Settings → Environment Variables):
-   `MONGODB_URI`, `JWT_SECRET`, `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `SITE_URL`, and `VITE_JRH_SITE_URL` (optional).
+   `MONGODB_URI`, `JWT_SECRET`, `ADMIN_USERNAME`, `ADMIN_PASSWORD` and `SITE_URL`.
 4. **File uploads:** Project → Storage → create a **Blob** store and connect it (adds `BLOB_READ_WRITE_TOKEN`).
    On Vercel each upload must be **under 4 MB** — the dashboard says so.
 5. **Redeploy** so the variables take effect. The first request seeds the empty database and creates the admin account.
@@ -90,7 +90,7 @@ address for 15 minutes.
 | Our Inspiration | Leadership page, Home |
 | History Timeline | History page, Home (highlights) |
 | Gallery (albums, archive treatment) | Gallery |
-| Settings (contact details, announcement bar, hidden extra numbers, J.R.H. site URL, social links, password) | Whole site |
+| Settings (contact details, announcement bar, hidden extra numbers, social links, password) | Whole site |
 | Enquiries (contact-form inbox) | — |
 
 Uploads: PDF, JPG, PNG and WebP only, checked by type **and** by file contents; saved in `server/uploads/` locally and
@@ -100,8 +100,8 @@ in Vercel Blob in production.
 
 The old `kesalibag.edu.in` server was compromised; nothing is copied or linked from it. This build adds: helmet + strict
 CSP, rate limits on login and the enquiry form (plus a honeypot field), schema validation with length limits on every
-route, only `http(s)://` or site-relative links accepted in content, no secrets in the browser bundle (only `VITE_JRH_SITE_URL`
-is public), `nosniff` on uploaded files.
+route, only `http(s)://` or site-relative links accepted in content, no secrets or environment variables in the browser
+bundle, `nosniff` on uploaded files.
 
 ## Project structure
 

@@ -39,11 +39,6 @@ const groups: { title: string; description: string; fields: Field[] }[] = [
     ],
   },
   {
-    title: 'Smt. J.R.H. Kanyashala website',
-    description: 'When filled in, the Kanyashala’s card shows “Visit website” with a “New website” badge.',
-    fields: [{ name: 'jrh_site_url', label: 'Website address', type: 'url', placeholder: 'https://' }],
-  },
-  {
     title: 'Social media',
     description: 'Links shown in the footer. Leave empty to hide.',
     fields: [

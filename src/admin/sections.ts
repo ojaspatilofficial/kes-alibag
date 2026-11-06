@@ -87,7 +87,6 @@ export const sections: Section[] = [
       { name: 'category', label: 'Type', type: 'select', required: true, options: categories.map((c) => ({ value: c.key, label: c.label })), half: true },
       { name: 'medium', label: 'Medium', type: 'select', options: [{ value: '', label: 'Not applicable (colleges)' }, ...opts('English', 'Marathi')], half: true },
       { name: 'hasJuniorCollege', label: 'Has a junior college', type: 'checkbox', half: true },
-      { name: 'isJrh', label: 'This is Smt. J.R.H. Kanyashala (website comes from Settings)', type: 'checkbox', half: true },
       { name: 'website', label: 'Website', type: 'url', placeholder: 'https://', help: 'When filled in, the card shows “Visit website”.' },
       { name: 'principal', label: 'Principal', type: 'text', half: true },
       { name: 'established', label: 'Year established', type: 'number', half: true },
@@ -97,7 +96,7 @@ export const sections: Section[] = [
       { name: 'slug', label: 'Web address name (slug)', type: 'text', half: true, help: 'Made automatically from the name if left empty.' },
       { name: 'order', label: 'Order in lists', type: 'number', half: true },
     ],
-    defaults: () => ({ name: '', town: '', district: 'Raigad', category: 'marathi-secondary', medium: 'Marathi', hasJuniorCollege: false, isJrh: false, website: '', slug: '', order: 1000 }),
+    defaults: () => ({ name: '', town: '', district: 'Raigad', category: 'marathi-secondary', medium: 'Marathi', hasJuniorCollege: false, website: '', slug: '', order: 1000 }),
     prepare: (i) => ({
       ...i,
       slug: s(i.slug).trim() || kebab(`${s(i.name)} ${s(i.town).split(',')[0]}`),

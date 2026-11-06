@@ -257,6 +257,5 @@ export const defaultSettings: SiteSettings = {
   social_youtube: '',
   social_instagram: '',
   social_x: '',
-  jrh_site_url: '',
   announcement: '',
 };

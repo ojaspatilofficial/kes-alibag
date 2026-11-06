@@ -14,7 +14,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 1
   },
   {
@@ -31,7 +30,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 2
   },
   {
@@ -48,7 +46,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 3
   },
   {
@@ -65,7 +62,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 4
   },
   {
@@ -82,7 +78,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 5
   },
   {
@@ -99,7 +94,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 6
   },
   {
@@ -116,7 +110,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 7
   },
   {
@@ -133,7 +126,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 8
   },
   {
@@ -150,7 +142,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 9
   },
   {
@@ -167,7 +158,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 10
   },
   {
@@ -184,7 +174,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 11
   },
   {
@@ -201,7 +190,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 12
   },
   {
@@ -218,7 +206,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 13
   },
   {
@@ -235,7 +222,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 14
   },
   {
@@ -252,7 +238,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 15
   },
   {
@@ -269,7 +254,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 16
   },
   {
@@ -286,7 +270,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 17
   },
   {
@@ -303,7 +286,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 18
   },
   {
@@ -320,7 +302,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 19
   },
   {
@@ -337,7 +318,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 20
   },
   {
@@ -354,7 +334,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 21
   },
   {
@@ -371,7 +350,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": true,
    "order": 22
   },
   {
@@ -388,7 +366,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 23
   },
   {
@@ -405,7 +382,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 24
   },
   {
@@ -422,7 +398,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 25
   },
   {
@@ -439,7 +414,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 26
   },
   {
@@ -456,7 +430,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 27
   },
   {
@@ -473,7 +446,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 28
   },
   {
@@ -490,7 +462,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 29
   },
   {
@@ -507,7 +478,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 30
   },
   {
@@ -524,7 +494,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 31
   },
   {
@@ -541,7 +510,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 32
   },
   {
@@ -558,7 +526,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 33
   },
   {
@@ -575,7 +542,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 34
   },
   {
@@ -592,7 +558,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 35
   },
   {
@@ -609,7 +574,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 36
   },
   {
@@ -626,7 +590,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 37
   },
   {
@@ -643,7 +606,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 38
   },
   {
@@ -660,7 +622,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 39
   },
   {
@@ -677,7 +638,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 40
   },
   {
@@ -694,7 +654,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 41
   },
   {
@@ -711,7 +670,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 42
   },
   {
@@ -728,7 +686,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 43
   },
   {
@@ -745,7 +702,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 44
   },
   {
@@ -762,7 +718,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 45
   },
   {
@@ -779,7 +734,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 46
   },
   {
@@ -796,7 +750,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 47
   },
   {
@@ -813,7 +766,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 48
   },
   {
@@ -830,7 +782,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 49
   },
   {
@@ -847,7 +798,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 50
   },
   {
@@ -864,7 +814,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 51
   },
   {
@@ -881,7 +830,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 52
   },
   {
@@ -898,7 +846,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 53
   },
   {
@@ -915,7 +862,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 54
   },
   {
@@ -932,7 +878,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 55
   },
   {
@@ -949,7 +894,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 56
   },
   {
@@ -966,7 +910,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 57
   },
   {
@@ -983,7 +926,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 58
   },
   {
@@ -1000,7 +942,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 59
   },
   {
@@ -1017,7 +958,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 60
   },
   {
@@ -1034,7 +974,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 61
   },
   {
@@ -1051,7 +990,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 62
   },
   {
@@ -1068,7 +1006,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 63
   },
   {
@@ -1085,7 +1022,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 64
   },
   {
@@ -1102,7 +1038,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 65
   },
   {
@@ -1119,7 +1054,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 66
   },
   {
@@ -1136,7 +1070,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 67
   },
   {
@@ -1153,7 +1086,6 @@
    "email": "",
    "principal": "",
    "established": null,
-   "isJrh": false,
    "order": 68
   }
  ],
@@ -1574,7 +1506,6 @@
   "social_youtube": "",
   "social_instagram": "",
   "social_x": "",
-  "jrh_site_url": "",
   "announcement": ""
  }
 }

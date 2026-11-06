@@ -25,8 +25,6 @@ export interface Institution {
   email?: string;
   principal?: string;
   established?: number | null;
-  /** Marks the Smt. J.R.H. Kanyashala record, whose website URL comes from settings / VITE_JRH_SITE_URL. */
-  isJrh?: boolean;
   order?: number;
 }
 
@@ -114,6 +112,5 @@ export interface SiteSettings {
   social_youtube: string;
   social_instagram: string;
   social_x: string;
-  jrh_site_url: string;
   announcement: string;
 }

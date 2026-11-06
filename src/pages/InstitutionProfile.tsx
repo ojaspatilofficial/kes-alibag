@@ -54,7 +54,6 @@ const InstitutionProfile: React.FC = () => {
           <CategoryBadge category={inst.category} />
           {inst.hasJuniorCollege && <Badge tone="gold">Jr. College</Badge>}
           {inst.medium && <Badge>{inst.medium} medium</Badge>}
-          {inst.isJrh && inst.website && <Badge tone="green">New website</Badge>}
         </div>
         {inst.website && (
           <a href={inst.website} target="_blank" rel="noopener noreferrer" className="btn-primary mt-7 !px-7">
