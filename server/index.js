@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 import { put } from '@vercel/blob';
 import { resources, forms, Settings, Admin } from './models.js';
 import { defaultSettings } from './startingContent.js';
-import { seedDatabase } from './seed.js';
+import { seedDatabase, syncAdminFromEnv } from './seed.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.API_PORT) || 5050;
@@ -95,6 +95,7 @@ export function connectDb() {
       // On Vercel every cold start runs this: when the database is already set up, skip the full check.
       const ready = ON_VERCEL && (await Settings.exists({})) && (await Admin.exists({}));
       if (!ready) await seedDatabase();
+      else await syncAdminFromEnv(); // apply changed ADMIN_USERNAME / ADMIN_PASSWORD
     })
     .catch((err) => {
       connecting = undefined;

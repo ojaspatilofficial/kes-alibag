@@ -46,9 +46,15 @@ Add each one for **Production, Preview and Development**.
 | `ADMIN_PASSWORD` | Copy from your local `.env` (see the note below) |
 | `SITE_URL` | The public address, e.g. `https://kes-alibag.vercel.app` (change it later if you add your own domain) |
 
-> **About the admin password:** the admin account already exists in Atlas — it was created from your local `.env`.
-> `ADMIN_USERNAME` / `ADMIN_PASSWORD` are only used when the database has **no** admin yet, so on the live site you
-> log in with the password from your local `.env`. Change it any time in **Admin → Settings → Change admin password**.
+> **How the admin login works:** `ADMIN_USERNAME` / `ADMIN_PASSWORD` set the admin login. Whenever you **change**
+> them (in Vercel, then redeploy — or in your local `.env`, then restart), the server applies the new values on its
+> next start. A password changed inside the dashboard (Admin → Settings → Change admin password) keeps working until
+> you change these variables again.
+>
+> Your computer and Vercel use **the same database**, so keep `ADMIN_USERNAME` / `ADMIN_PASSWORD` the **same** in your
+> local `.env` and in Vercel — otherwise each one resets the login to its own values.
+>
+> Use a strong password on the live site: anyone can open `/admin`.
 
 Never put these values in the code or commit `.env` — it is in `.gitignore`.
 
@@ -91,7 +97,8 @@ Open your Vercel URL and check:
 | --- | --- |
 | Pages load but lists are empty / `/api/health` says the database is not reachable | Atlas **Network Access** (step 1), or a wrong `MONGODB_URI` (check the password and `/kes_alibag`). Redeploy after changing variables. |
 | Admin login says “Admin login is not set up” | Add `JWT_SECRET` (step 3) and redeploy. |
-| “Wrong username or password” | Use the password from your local `.env` (the account already exists in Atlas). |
+| “Wrong username or password” | Check `ADMIN_USERNAME` / `ADMIN_PASSWORD` in Vercel (no extra spaces), **redeploy**, then try again. They must match your local `.env` (same database). |
+| “Too many login attempts” | Wait 15 minutes — 10 wrong passwords lock login for that connection. |
 | Upload says “not set up yet” | Connect the Blob store (step 4) and redeploy. |
 | Upload says “file is too big” | Keep files under 4 MB. |
 | Build fails | Project → Settings → General → **Node.js Version 22.x**, then redeploy. |

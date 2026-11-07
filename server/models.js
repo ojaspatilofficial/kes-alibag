@@ -157,6 +157,9 @@ const AdminSchema = new Schema(
   {
     username: { type: String, required: true, unique: true, trim: true, maxlength: 60 },
     password_hash: { type: String, required: true },
+    // bcrypt hash of the ADMIN_USERNAME/ADMIN_PASSWORD last applied from the environment. When the
+    // environment values change, the server applies them again (see syncAdminFromEnv in seed.js).
+    env_fingerprint: { type: String, default: '' },
   },
   { timestamps: true }
 );
